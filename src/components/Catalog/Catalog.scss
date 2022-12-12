@@ -1,0 +1,26 @@
+.list_cards {
+    display: flex;
+    margin-top: 3vw;
+    border-top: 1px solid lightgray;
+    padding-top: 2vw;
+    margin-left: 13vw;
+    // justify-content: center;
+    flex-wrap: wrap;
+}
+.all {
+    margin-bottom: 0;
+    margin-top: 2vw;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.2vw;
+}
+
+.seeall {
+    color: black;
+    background-color: #CCB2A3;
+    border: none;
+    border-radius: 4px;
+    padding:  1.4vw;
+    font-size: 1vw;
+    cursor: pointer;
+}

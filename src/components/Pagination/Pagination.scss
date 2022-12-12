@@ -1,0 +1,18 @@
+.pagination {
+    display: flex;
+    margin-bottom: 2vw;
+    justify-content: center;
+
+}
+.pagination_button {
+width: 4vw;
+height: 4vw;
+color: black;
+background-color: #CCB2A3;
+border: none;
+margin-right: 0.5vw;
+border-radius: 4px;
+}
+.current_page {
+    border: 1px solid blue;
+}

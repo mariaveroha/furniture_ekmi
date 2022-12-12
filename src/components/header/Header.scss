@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.square {
+    position: absolute;
+    margin-left: 14vw;
+    width: 4vw;
+	height: 4vw;
+	background: transparent;
+    background-color: #CCB2A3;
+    border: 0.3vw solid white;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.square_second {
+    margin-left: 17vw !important;
+}
+
+.header {
+    padding-top: 4vw;
+    display: flex;
+    align-items: center;
+}
+.navbar {
+    display: flex!important;;
+    align-items: center;
+    color: black;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    @media (max-width: 460px) {
+     display: none!important;
+    }
+}
+.navbar_item, .navbar_item_main {
+    margin-right: 23px;
+    cursor: pointer;
+    font-size: 1.2vw;
+    text-align: center;
+}
+.navbar_item, .navbar_last_item  {
+    padding-top: 2vw;
+}
+.input_catalog {
+    color: black!important;
+    font-size: 1.2vw!important;
+    font-weight: 500!important;
+}
+.navbar_item_main {
+    margin-left: 25vw;
+    @media (max-width: 1095px) {
+    margin-left: 30vw;
+    }
+}
+.navbar_last_item {
+margin-right: 34px;
+cursor: pointer;
+font-size: 1.2vw;
+
+}

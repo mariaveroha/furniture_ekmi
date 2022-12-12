@@ -1,0 +1,20 @@
+.title_example {
+    text-align: center;
+    margin-top: 7vw;
+    font-family: Tinos;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 62px;
+}
+
+.example_table {
+    display: flex;
+    justify-content: center;
+}
+
+.mario {
+    width: 40vw;
+    @media (max-width: 600px) {
+        width: 36vw;
+            } 
+}

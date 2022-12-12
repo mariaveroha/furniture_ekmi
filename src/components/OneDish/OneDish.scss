@@ -1,0 +1,16 @@
+.oneDish_table, .dish_about {
+    display: flex;
+    align-items: center;
+}
+.dish_about {
+    margin-left: 20px;
+    font-size: 2vw;
+}
+.hamburger {
+    width: 14vw;
+    margin-bottom: 1vw;
+    margin-left: 1vw;
+    @media (max-width: 600px) {
+        width: 13vw;
+            }
+}

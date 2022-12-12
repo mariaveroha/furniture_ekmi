@@ -1,0 +1,44 @@
+.Individ_back {
+    background-color: #A9C2BE;
+    width: 100%;
+    height: 25vw;
+    display: flex;
+}
+.consultant {
+    height: 24vw;
+    padding: 3vw;
+}
+
+.button_individ {
+    background-color:  #CCB2A3;
+    color: black;
+    align-items: center;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 1vw;
+    margin-left: 14vw;
+    margin-top: 2vw;
+    border: none;
+
+}
+.block_individ {
+    margin-left: 5vw;
+}
+.text_business {
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    font-family: Tinos;
+    font-size: 4vw;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+ 
+}
+
+.text_individ {
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: 500;
+}

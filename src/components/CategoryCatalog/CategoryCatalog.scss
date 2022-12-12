@@ -1,0 +1,28 @@
+.card_category_main:hover {
+    background-color: white;
+    cursor: pointer;
+}
+.category_main_catalog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vw;
+    background-color: #CCB2A3;
+    @media (max-width: 460px) {
+        margin-top: 7vw;
+            }
+}
+.name_main_category {
+    text-align: center;
+      font-size: 1.2vw;
+      margin-bottom: 0;
+      padding-bottom: 2vw;
+  }
+
+.cover {
+    width: 14vw;
+    height: 12vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    padding: 1vw;
+}

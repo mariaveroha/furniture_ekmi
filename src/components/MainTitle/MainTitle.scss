@@ -1,0 +1,44 @@
+.header_main_title {
+position: relative;
+}
+.hero_image {
+width: 100%;
+}
+.title_main_in {
+    position: absolute;
+    width: 100%;
+}
+.banner_text {
+    margin-left: 13vw;
+}
+.topTitle {
+    margin-top: 7.5vw;
+    color: black;
+    font-family: Tinos;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 4.7vw;
+    margin-bottom: 2vw;
+    max-width: 25vw;
+    @media (max-width: 400px) {
+        margin-top: 11vw;
+        margin-bottom: 1vw;
+    }
+}
+.menu {
+    background-color: #CCB2A3;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    align-items: center;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-size: 1vw;
+    line-height: 19px;
+    cursor: pointer;
+    padding: 1vw 2vw 1vw 2vw; 
+    @media (max-width: 400px) {
+        padding: 0.5vw 2vw 0.5vw 2vw; 
+        font-size: 1.4vw;
+    }   
+}

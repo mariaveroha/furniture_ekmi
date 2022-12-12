@@ -1,0 +1,42 @@
+.gallery {
+    display: flex;
+    align-items: center;
+}
+
+.gallery_title {
+    font-family: Tinos;
+    font-size: 4vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 7vw;
+}
+
+.gallery_photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 32vw;
+    height: 25vw;
+}
+
+.triangle-left {
+    cursor: pointer;
+   margin-left: 20vw;
+}
+.triangle-right {
+    cursor: pointer;
+   margin-right: 20vw;
+}
+
+.images {
+    display: flex;
+justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.photo {
+    width: 10vw;
+    margin: 10px;
+    cursor: pointer;
+}

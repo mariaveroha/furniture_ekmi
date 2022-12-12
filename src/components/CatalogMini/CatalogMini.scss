@@ -1,0 +1,34 @@
+.block_catalog {
+    background-color: white;
+    width: 100%;
+    margin-top: 7vw;
+}
+.catalog_title {
+    font-family: Tinos;
+    font-weight: 400px;
+    font-size: 4vw;
+    text-align: center;
+    color: black;
+    margin-bottom: 3vw;
+}
+.one_card_category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name_category {
+    font-size: 2vw;
+   border-bottom: 1px solid lightgrey ;
+   margin-left: 15vw;
+   margin-right: 15vw;
+}
+.seeAll {
+    margin-left: 4vw;
+    font-size: 1.4vw;
+    padding: 2vw;
+    border: none;
+    background-color: #CCB2A3;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+ }

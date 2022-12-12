@@ -1,0 +1,19 @@
+.all_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21vw;  
+    margin-right: 4vw;
+    @media (max-width: 1600px) {
+margin-top: 24vw;
+    } 
+    @media (max-width: 1480px) {
+        margin-top: 26vw;
+            } 
+            @media (max-width: 600px) {
+                margin-top: 21vw;
+                    } 
+                    // @media (max-width: 450px) {
+                    //     margin-top: 24vw;
+                    //         } 
+}

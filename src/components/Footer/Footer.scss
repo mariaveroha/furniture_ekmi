@@ -1,0 +1,42 @@
+.footer {
+    background-color: #A9C2BE;
+    padding-top: 5vw;
+    padding-left: 15vw;
+    height: 17vw;
+}
+
+.columns {
+    display: flex;
+}
+.plan_furniture, .inspiration, .aboutus {
+    margin-right: 5vw ;
+    height: 10vw;
+}
+.inspiration, .aboutus  {
+    padding-left: 3vw;
+    border-left: 1px solid lightgray;
+}
+.plan_furniture_title , .inspiration_title, .money_title,.aboutus_title {
+font-size: 1.2vw;
+font-weight: 500;
+}
+.constructor {
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 400;
+}
+.constructor:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.pay {
+    margin-top: 2vw;
+    @media (max-width: 550px) {
+        margin-top: 1vw;
+            }
+}
+.bank {
+    width: 3vw;
+    margin-right: 3vw;
+}
