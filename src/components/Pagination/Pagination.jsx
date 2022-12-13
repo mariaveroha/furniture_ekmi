@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { CurrentPageFunction, paginationFunction } from "../../Redux/PaginationReducer";
+import { CurrentPageFunction, paginationFunction, perPageFunction } from "../../Redux/PaginationReducer";
 import './Pagination.scss'
 
 
@@ -12,6 +11,7 @@ const Pagination = (props) => {
     const totalCount = useSelector(state => state.pagination.totalCount)
     const dispatch = useDispatch()
     let paginationButtons = []
+    
     for (let i = 0; i < Math.ceil(totalCount / perPage); i++) {
         paginationButtons.push(i + 1)
     }
@@ -25,16 +25,19 @@ const Pagination = (props) => {
     }
     useEffect(() => {
         dispatch(paginationFunction(catalog.length))
-    }, [currentPage])
+        if (window.innerWidth < 768) {
+            dispatch(perPageFunction(10)) 
+         }
+         if (window.innerWidth > 768) {
+             dispatch(perPageFunction(9)) 
+          }
+    }, [currentPage, perPage])
     return (
-        <div>
-
             <div className="pagination ">
                 {paginationButtons.map(buttons => {
                     return <button onClick={() => ChangePage(buttons)} className={currentPage === buttons ? ' current_page pagination_button' : 'pagination_button'} key={buttons}> {buttons}</button>
                 })}
             </div>
-        </div>
     )
 }
 export default Pagination

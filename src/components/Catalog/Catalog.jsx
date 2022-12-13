@@ -15,6 +15,7 @@ const Catalog = () => {
     let firstIndex = lastIndex - perPage
     return (
         <div className="container">
+            <div className="content">
             <Header />
             <CategoryCatalog />
             <p className="all">Вся мебель</p>
@@ -24,7 +25,10 @@ const Catalog = () => {
                 })}
             </div>
            <Pagination/>
-           <Footer/>
+            </div>
+            <div className="catalog_footer">
+            <Footer/>
+            </div>
         </div>
     )
 }

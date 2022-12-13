@@ -8,7 +8,6 @@ import visa from '../../images/visa.svg'
 
 const Footer = () => {
     return (
-        <div className="container">
                 <div className="footer">
                     <div className="columns">
                         <div className="plan_furniture">
@@ -38,7 +37,6 @@ const Footer = () => {
                         <img className="bank" src={tinkoff} />
                     </div>
                 </div>
-        </div>
     )
 }
 export default Footer

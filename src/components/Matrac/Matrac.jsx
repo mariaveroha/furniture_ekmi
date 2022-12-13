@@ -26,18 +26,23 @@ const Matrac = () => {
     }, [currentPage])
     return (
         <div className="container">
-            <Header />
-            <CategoryCatalog />
-            <div className="list_cards">
-                {matracCatalog.slice(firstIndex,lastIndex).map(el => {
+            <div className="content">
+                <Header />
+                <CategoryCatalog />
+                <div className="list_cards">
+                    {matracCatalog.slice(firstIndex, lastIndex).map(el => {
                         return <CatalogItem catalog={el} key={el.id} />
-                })}
+                    })}
+                </div>
+                <Pagination />
+                <Link className="button_link" to='/catalog'>
+                    <button className="seeall">Смотреть весь каталог</button>
+                </Link>
             </div>
-            <Pagination />
-            <Link className="button_link" to ='/catalog'>
-                <button className="seeall">Смотреть весь каталог</button>
-            </Link>
-            <Footer/>
+            <div className="catalog_footer">
+                <Footer />
+            </div>
+
         </div>
     )
 }

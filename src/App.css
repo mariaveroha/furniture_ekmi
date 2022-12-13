@@ -3,8 +3,9 @@
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  /* height: 100vh; */
-  
+
+  position: relative;
+	min-height: 100vh;
 }
 
 .link {

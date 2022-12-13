@@ -1,5 +1,6 @@
 const PAGINATION_ACTION = 'PAGINATION_ACTION'
 const CURRENT_PAGE_ACTION = 'CURRENT_PAGE_ACTION'
+const PER_PAGE_ACTION = 'PER_PAGE_ACTION'
 const initialState = {
     currentPage: 1,
     perPage: 9,
@@ -18,6 +19,11 @@ export default function PaginationReducer(state = initialState, action) {
                 ...state,
                 currentPage: action.payload
             }
+            case PER_PAGE_ACTION:
+                return {
+                    ...state,
+                    perPage: action.payload
+                }
         default:
             return state
     }
@@ -25,3 +31,5 @@ export default function PaginationReducer(state = initialState, action) {
 export const paginationFunction = (count) => ({ type: PAGINATION_ACTION, payload: count })
 
 export const CurrentPageFunction = (page) => ({type: CURRENT_PAGE_ACTION, payload: page})
+
+export const perPageFunction = (page) => ({type: PER_PAGE_ACTION, payload: page})

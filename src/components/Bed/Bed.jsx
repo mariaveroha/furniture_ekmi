@@ -26,6 +26,7 @@ const Bed = () => {
     }, [currentPage])
     return (
         <div className="container">
+            <div className="content">
             <Header />
             <CategoryCatalog />
             <div className="list_cards">
@@ -37,7 +38,11 @@ const Bed = () => {
             <Link className="button_link" to ='/catalog'>
                 <button className="seeall">Смотреть весь каталог</button>
             </Link>
-            <Footer/>
+            </div>
+           <div className="catalog_footer">
+           <Footer/>
+           </div>
+        
         </div>
     )
 }

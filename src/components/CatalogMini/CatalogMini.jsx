@@ -30,9 +30,17 @@ const CatalogMini = () => {
         <p className="name_category">Диваны</p>
         <div className="one_card_category">
           {catalog.map((catalog) => {
-            if (catalog.id < 4) {
-              return <CatalogItem catalog={catalog} key={catalog.id} />
+            if (window.innerWidth > 768) {
+              if (catalog.id < 4) {
+                return <CatalogItem catalog={catalog} key={catalog.id} />
+              }
             }
+            else {
+              if (catalog.id <= 2) {
+                return <CatalogItem catalog={catalog} key={catalog.id} />
+              }
+            }
+
           }
           )}
           <Link to='/catalog/sofa'> <button className="seeAll">Смотреть все</button></Link>
@@ -42,8 +50,15 @@ const CatalogMini = () => {
       <p className="name_category">Кресла</p>
       <div className="one_card_category">
         {catalog.map((catalog) => {
-          if (catalog.id > 3 && catalog.id < 7) {
-            return <CatalogItem catalog={catalog} key={catalog.id} />
+          if (window.innerWidth > 768) {
+            if (catalog.id > 3 && catalog.id < 7) {
+              return <CatalogItem catalog={catalog} key={catalog.id} />
+            }
+          }
+          else {
+            if (catalog.id > 3 && catalog.id < 6) {
+              return <CatalogItem catalog={catalog} key={catalog.id} />
+            }
           }
         }
         )}
@@ -52,8 +67,15 @@ const CatalogMini = () => {
       <p className="name_category">Кровати</p>
       <div className="one_card_category">
         {catalog.map((catalog) => {
-          if (catalog.id > 6) {
-            return <CatalogItem catalog={catalog} key={catalog.id} />
+          if (window.innerWidth > 768) {
+            if (catalog.id > 6) {
+              return <CatalogItem catalog={catalog} key={catalog.id} />
+            }
+          }
+          else {
+            if (catalog.id > 6 && catalog.id < 9) {
+              return <CatalogItem catalog={catalog} key={catalog.id} />
+            }
           }
         }
         )}
