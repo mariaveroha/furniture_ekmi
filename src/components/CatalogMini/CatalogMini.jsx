@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './CatalogMini.scss'
+import MediaQuery from 'react-responsive'
 import { Link } from "react-router-dom";
 import sofa2 from "../../images/sofa2.svg"
 import sofa3 from "../../images/sofa3.svg"
@@ -26,62 +27,76 @@ const CatalogMini = () => {
   return (
     <div id='cataloglist' className="block_catalog">
       <p className="catalog_title"> Каталог</p>
-      <div>
-        <p className="name_category">Диваны</p>
-        <div className="one_card_category">
-          {catalog.map((catalog) => {
-            if (window.innerWidth > 768) {
+      <MediaQuery minWidth={768}>
+        <div>
+          <p className="name_category">Диваны</p>
+          <div className="one_card_category">
+            {catalog.map((catalog) => {
               if (catalog.id < 4) {
                 return <CatalogItem catalog={catalog} key={catalog.id} />
               }
             }
-            else {
-              if (catalog.id <= 2) {
-                return <CatalogItem catalog={catalog} key={catalog.id} />
-              }
-            }
-
-          }
-          )}
-          <Link to='/catalog/sofa'> <button className="seeAll">Смотреть все</button></Link>
+            )}
+            <Link to='/catalog/sofa'> <button className="seeAll">Смотреть все</button></Link>
+          </div>
         </div>
-      </div>
 
-      <p className="name_category">Кресла</p>
-      <div className="one_card_category">
-        {catalog.map((catalog) => {
-          if (window.innerWidth > 768) {
+        <p className="name_category">Кресла</p>
+        <div className="one_card_category">
+          {catalog.map((catalog) => {
             if (catalog.id > 3 && catalog.id < 7) {
               return <CatalogItem catalog={catalog} key={catalog.id} />
             }
           }
-          else {
-            if (catalog.id > 3 && catalog.id < 6) {
-              return <CatalogItem catalog={catalog} key={catalog.id} />
-            }
-          }
-        }
-        )}
-        <Link to='/catalog/chair'> <button className="seeAll">Смотреть все</button></Link>
-      </div>
-      <p className="name_category">Кровати</p>
-      <div className="one_card_category">
-        {catalog.map((catalog) => {
-          if (window.innerWidth > 768) {
+          )}
+          <Link to='/catalog/chair'> <button className="seeAll">Смотреть все</button></Link>
+        </div>
+        <p className="name_category">Кровати</p>
+        <div className="one_card_category">
+          {catalog.map((catalog) => {
             if (catalog.id > 6) {
               return <CatalogItem catalog={catalog} key={catalog.id} />
             }
           }
-          else {
-            if (catalog.id > 6 && catalog.id < 9) {
+          )}
+          <Link to='/catalog/bed'> <button className="seeAll">Смотреть все</button></Link>
+        </div>
+      </MediaQuery>
+      <MediaQuery minWidth={350} maxWidth={768}>
+      <div>
+          <p className="name_category">Диваны</p>
+          <div className="one_card_category">
+            {catalog.map((catalog) => {
+              if (catalog.id < 3) {
+                return <CatalogItem catalog={catalog} key={catalog.id} />
+              }
+            }
+            )}
+            <Link to='/catalog/sofa'> <button className="seeAll">Смотреть все</button></Link>
+          </div>
+        </div>
+
+        <p className="name_category">Кресла</p>
+        <div className="one_card_category">
+          {catalog.map((catalog) => {
+            if (catalog.id > 3 && catalog.id < 6) {
               return <CatalogItem catalog={catalog} key={catalog.id} />
             }
           }
-        }
-        )}
-        <Link to='/catalog/bed'> <button className="seeAll">Смотреть все</button></Link>
-      </div>
-
+          )}
+          <Link to='/catalog/chair'> <button className="seeAll">Смотреть все</button></Link>
+        </div>
+        <p className="name_category">Кровати</p>
+        <div className="one_card_category">
+          {catalog.map((catalog) => {
+            if (catalog.id > 7) {
+              return <CatalogItem catalog={catalog} key={catalog.id} />
+            }
+          }
+          )}
+          <Link to='/catalog/bed'> <button className="seeAll">Смотреть все</button></Link>
+        </div>
+      </MediaQuery>
     </div>
   )
 }

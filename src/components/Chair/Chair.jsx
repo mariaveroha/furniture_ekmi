@@ -7,12 +7,23 @@ import CategoryCatalog from "../CategoryCatalog/CategoryCatalog";
 import Footer from "../Footer/Footer";
 import Header from "../header/Header";
 import Pagination from "../Pagination/Pagination";
+import { useMediaQuery } from 'react-responsive'
 
 const Chair = () => {
     const catalog = useSelector(state => state.catalog.catalog)
     const currentPage = useSelector(state => state.pagination.currentPage)
-    const perPage = useSelector(state => state.pagination.perPage)
     const dispatch = useDispatch()
+    let perPage = 9
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 350px)'
+    })
+    const isBigScreen = useMediaQuery({ query: '(min-width: 768px)' })
+    if (isDesktopOrLaptop) {
+        perPage = 8
+    }
+    if (isBigScreen) {
+        perPage = 9
+    }
     let lastIndex = currentPage * perPage
     let firstIndex = lastIndex - perPage
     let chairCatalog = []

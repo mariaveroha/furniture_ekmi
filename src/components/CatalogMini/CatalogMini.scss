@@ -31,4 +31,8 @@
     color: black;
     border-radius: 4px;
     cursor: pointer;
+    @media (max-width: 768px) {
+        margin-left: 2.5vw;
+        padding: 1.8vw;
+    }
  }
