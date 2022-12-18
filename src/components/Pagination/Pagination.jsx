@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { CurrentPageFunction, paginationFunction, perPageFunction } from "../../Redux/PaginationReducer";
+import { CurrentPageFunction, paginationFunction } from "../../Redux/PaginationReducer";
 import './Pagination.scss'
-import MediaQuery, { useMediaQuery } from 'react-responsive'
+import  { useMediaQuery } from 'react-responsive'
 
 
 const Pagination = (props) => {

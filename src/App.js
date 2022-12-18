@@ -2,11 +2,11 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainTitle from './components/MainTitle/MainTitle';
 import Catalog from './components/Catalog/Catalog';
-import Sofa from './components/Sofa/Sofa';
-import Bed from './components/Bed/Bed';
-import Chair from './components/Chair/Chair';
-import Puf from './components/Puf/Puf';
-import Matrac from './components/Matrac/Matrac';
+import Sofa from './components/FurnitureCategoriesInCatalog/Sofa/Sofa';
+import Bed from './components/FurnitureCategoriesInCatalog/Bed/Bed';
+import Chair from './components/FurnitureCategoriesInCatalog/Chair/Chair';
+import Puf from './components/FurnitureCategoriesInCatalog/Puf/Puf';
+import Matrac from './components/FurnitureCategoriesInCatalog/Matrac/Matrac';
 import ScrollToTop from './components/ScrollToTop';
 
 

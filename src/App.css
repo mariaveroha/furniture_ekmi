@@ -8,14 +8,11 @@
 	min-height: 100vh;
 }
 
+.content {
+  padding-bottom: 30vw;
+}
+
 .link {
   text-decoration: none;
   color: black;
-}
-
-.button_link {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4vw;
-  text-decoration: none;
 }
